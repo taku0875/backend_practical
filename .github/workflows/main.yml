@@ -35,4 +35,3 @@ jobs:
         app-name: app-001-step3-1-suzuyu-py-9
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: backend.zip
-        force-deploy: true
