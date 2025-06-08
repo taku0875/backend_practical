@@ -85,3 +85,7 @@ def delete_customer(customer_id: str = Query(...)):
 def fetchtest():
     response = requests.get('https://jsonplaceholder.typicode.com/users')
     return response.json()
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
